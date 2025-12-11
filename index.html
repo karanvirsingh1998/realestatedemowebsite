@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your dream home with Premier Real Estate - Your trusted partner in residential and commercial properties">
+    <title>Premier Real Estate - Find Your Dream Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Premier Real Estate</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#properties" class="nav-link">Properties</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Dream Home</h1>
+                <p class="hero-subtitle">Discover the perfect property that fits your lifestyle</p>
+                
+                <!-- Search Box -->
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <button class="tab-btn active" data-tab="buy">Buy</button>
+                        <button class="tab-btn" data-tab="rent">Rent</button>
+                        <button class="tab-btn" data-tab="sell">Sell</button>
+                    </div>
+                    <div class="search-form">
+                        <div class="form-group">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" placeholder="Enter location">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-home"></i>
+                            <select>
+                                <option>Property Type</option>
+                                <option>House</option>
+                                <option>Apartment</option>
+                                <option>Villa</option>
+                                <option>Condo</option>
+                                <option>Commercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-dollar-sign"></i>
+                            <select>
+                                <option>Price Range</option>
+                                <option>$0 - $100,000</option>
+                                <option>$100,000 - $300,000</option>
+                                <option>$300,000 - $500,000</option>
+                                <option>$500,000 - $1,000,000</option>
+                                <option>$1,000,000+</option>
+                            </select>
+                        </div>
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="properties" id="properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <p>Browse our selection of premium properties</p>
+            </div>
+            
+            <div class="property-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="house">Houses</button>
+                <button class="filter-btn" data-filter="apartment">Apartments</button>
+                <button class="filter-btn" data-filter="villa">Villas</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <div class="property-card" data-category="house">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=400&fit=crop" alt="Modern Family House">
+                        <span class="property-badge">For Sale</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Modern Family House</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> 123 Oak Street, Beverly Hills, CA</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$850,000</span>
+                            <button class="details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card" data-category="apartment">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop" alt="Luxury Apartment">
+                        <span class="property-badge rent">For Rent</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Luxury Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> 456 Park Avenue, Manhattan, NY</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$3,500/mo</span>
+                            <button class="details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card" data-category="villa">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop" alt="Beachfront Villa">
+                        <span class="property-badge">For Sale</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Beachfront Villa</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> 789 Ocean Drive, Miami Beach, FL</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4,200 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$2,500,000</span>
+                            <button class="details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card" data-category="house">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=400&fit=crop" alt="Suburban Home">
+                        <span class="property-badge">For Sale</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Suburban Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> 321 Maple Lane, Austin, TX</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$425,000</span>
+                            <button class="details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card" data-category="apartment">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop" alt="Downtown Loft">
+                        <span class="property-badge rent">For Rent</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Downtown Loft</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> 654 Market Street, San Francisco, CA</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 1 Bed</span>
+                            <span><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined"></i> 850 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$2,800/mo</span>
+                            <button class="details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card" data-category="commercial">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Commercial Office">
+                        <span class="property-badge">For Sale</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Commercial Office Space</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> 987 Business Blvd, Seattle, WA</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-building"></i> 10 Floors</span>
+                            <span><i class="fas fa-car"></i> 50 Parking</span>
+                            <span><i class="fas fa-ruler-combined"></i> 15,000 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$3,200,000</span>
+                            <button class="details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=600&fit=crop" alt="About Us">
+                    <div class="stats-box">
+                        <h3>25+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>About Premier Real Estate</h2>
+                    <p class="lead">Your Trusted Partner in Finding the Perfect Property</p>
+                    <p>With over 25 years of experience in the real estate industry, we've helped thousands of families find their dream homes and investors discover lucrative opportunities. Our team of dedicated professionals is committed to providing exceptional service and expert guidance throughout your real estate journey.</p>
+                    <p>Whether you're buying, selling, or renting, we offer personalized solutions tailored to your unique needs and budget. Our extensive portfolio includes residential, commercial, and luxury properties across prime locations.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Award Winning Service</h4>
+                            <p>Recognized for excellence in real estate</p>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Expert Team</h4>
+                            <p>Experienced professionals at your service</p>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Client First</h4>
+                            <p>Your satisfaction is our priority</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive real estate solutions for all your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Sales</h3>
+                    <p>Find and purchase your ideal property with expert guidance and competitive pricing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Property Rentals</h3>
+                    <p>Discover rental properties that match your lifestyle and budget requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Professional property management services to maximize your investment returns.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Property Valuation</h3>
+                    <p>Accurate property valuations based on market analysis and expert assessment.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Investment Consulting</h3>
+                    <p>Strategic advice for real estate investments and portfolio diversification.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Legal Assistance</h3>
+                    <p>Complete support with contracts, documentation, and legal procedures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our satisfied clients say about us</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Premier Real Estate made our home buying experience seamless and stress-free. Their team was professional, knowledgeable, and always available to answer our questions."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>Home Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellent service! They helped me find the perfect investment property and provided valuable insights on market trends. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>Property Investor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The team at Premier Real Estate went above and beyond to sell our property quickly and at a great price. Their marketing strategies were impressive!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Emily Rodriguez">
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <span>Property Seller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you. Contact us today!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Real Estate Avenue<br>Suite 100, Los Angeles, CA 90001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@premierrealestate.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group-full">
+                                <input type="text" id="name" placeholder="Full Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group-full">
+                                <input type="email" id="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group-full">
+                                <input type="tel" id="phone" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group-full">
+                                <select id="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="buying">Buying Property</option>
+                                    <option value="selling">Selling Property</option>
+                                    <option value="renting">Renting Property</option>
+                                    <option value="consultation">Request Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group-full">
+                                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-home"></i>
+                        <span>Premier Real Estate</span>
+                    </div>
+                    <p>Your trusted partner in finding the perfect property. Making dreams come true since 1998.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Property Types</h3>
+                    <ul>
+                        <li><a href="#">Houses</a></li>
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Villas</a></li>
+                        <li><a href="#">Commercial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get the latest property updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premier Real Estate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
